@@ -11,11 +11,7 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors(
-  {
-    origin: process.env.CLIENT_URL,
-  }
-)); 
+app.use(cors({ origin: process.env.CLIENT_URL}));
 
 app.use(clerkMiddleware());
 app.use(express.json());
@@ -30,7 +26,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.get("/",(req,res)=>{
+app.get("/", (req, res) => {
   res.send("Welcome to the API")
 })
 
