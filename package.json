@@ -5,7 +5,10 @@
   "main": "server.js",
   "type":"module",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "echo 'No build step defined'",
+    "start": "node server.js"
+
   },
   "author": "",
   "license": "ISC",
